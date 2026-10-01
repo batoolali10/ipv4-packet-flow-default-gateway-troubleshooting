@@ -13,7 +13,7 @@ The lab follows a practical troubleshooting workflow:
 ---
 
 ## Topology
-
+![Network Topology](01-topology.png)
 The network consists of two IPv4 LANs connected through a Cisco router.
 
 ```text
@@ -83,6 +83,7 @@ No static routes were required because both networks are directly connected to R
 ---
 
 ## Baseline Verification
+![Baseline Verification](02-baseline-verification.png)
 
 Before introducing a fault, connectivity and device state were verified.
 
@@ -206,7 +207,7 @@ This demonstrates the difference between:
 ---
 
 ## Troubleshooting Scenario
-
+![Default Gateway Fault](03-default-gateway-fault.png)
 A fault was intentionally introduced by changing PC-A's default gateway from:
 
 ```text
@@ -248,6 +249,7 @@ This indicated that local communication was still working while remote-subnet co
 ---
 
 ## Evidence Collection
+![Troubleshooting Evidence](04-troubleshooting-evidence.png)
 
 ### 1. Verify Host Configuration
 
@@ -335,6 +337,7 @@ The default gateway on PC-A was changed back to:
 ---
 
 ## Verification After the Fix
+![Fixed Connectivity](05-fixed-connectivity.png)
 
 The configuration was verified using:
 
@@ -366,6 +369,7 @@ This confirmed that the connectivity issue had been resolved.
 ---
 
 ## Packet Flow Observation
+![Packet Flow PDU](06-packet-flow-pdu.png)
 
 Cisco Packet Tracer Simulation Mode was used to observe the packet journey.
 
